@@ -46,7 +46,7 @@ Here’s the **progressive roadmap** 👇
 ps aux | grep kubelet
 sudo journalctl -u kubelet
 df -h /var/lib/kubelet
-
+```
 ---
 
 ### Level 2: Networking & Storage in Linux
@@ -62,11 +62,11 @@ IPTables & routing basics (iptables -L, ip route show)
 Mounts and storage: lsblk, mount, df -h, du, lsof
 
 📘 Practice:
-
+```
 ip a
 sudo iptables -L -n
 cat /etc/resolv.conf
-
+```
 ---
 
 ### Level 3: Containers & System Internals
@@ -82,10 +82,10 @@ Logs: journalctl, /var/log/
 Systemctl services: systemctl status containerd
 
 📘 Practice:
-
+```
 lsns | grep docker
 cat /proc/self/cgroup
-
+```
 ---
 
 ### Level 4: Security & Troubleshooting
@@ -101,10 +101,10 @@ System resource limits (ulimit)
 Logs and system audit
 
 📘 Practice:
-
+```
 sudo tail -f /var/log/messages
 sudo cat /etc/security/limits.conf
-
+```
 ---
 
 ### Level 5: Kubernetes on Bare Metal
@@ -120,7 +120,7 @@ Inspect system logs when pods fail
 Debug networking via Linux tools
 
 📘 Practice:
-
+```
 sudo systemctl status kubelet
 sudo iptables -t nat -L | grep KUBE
-
+```
